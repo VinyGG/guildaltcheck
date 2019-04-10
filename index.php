@@ -1,4 +1,6 @@
 <?php
+echo "viny";
+exit;
 $region = "us";
 $realm = "azralon";
 $guild = "Saltlords"; 
