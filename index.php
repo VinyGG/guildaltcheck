@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body>
-
 <?php
 echo "viny";
 exit;
@@ -49,5 +45,3 @@ foreach ($members as $member) {
     echo "\n";
 }
 ?>
-</body>
-</html>
