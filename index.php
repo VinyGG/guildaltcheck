@@ -11,7 +11,7 @@ $realm = "azralon";
 $guild = "saltlords";
 $interJson = "http://localhost/guildaltcheck/saltlords.json";
 $urlName = "https://".$region.".api.blizzard.com/data/wow/guild/".$realm."/".$guild."/roster?namespace=profile-us&locale=en_US&access_token=".$token;
-echo "urlName";
+echo "$urlName";
 exit;
 $urlAchiev;
 $members = json_decode(file_get_contents($urlName), true);
