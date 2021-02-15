@@ -3,11 +3,11 @@ echo "viny";
 
 $region = "us";
 $realm = "azralon";
-$guild = "Saltlords"; 
-$key = "US1qMcOzTR6RhRXtAcqU492bBTJGG53kZC";
-$url = "https://us.api.blizzard.com/wow/character/azralon/Domy?locale=en_US&access_token=USeRj1SRgddcRV7irEHtVzbkdKM3FFGLM8";
+$guild = "saltlords";
+$key = "USIfJFShESg0XRTCHbavKmuMEcHUPd4PhY";
+//$url = "https://us.api.blizzard.com/wow/character/azralon/Domy?locale=en_US&access_token=USIfJFShESg0XRTCHbavKmuMEcHUPd4PhY";
 
-//Guil Members
+//Guild Members
 $url = "http://".$region.".api.blizzard.com/wow/guild/".$realm."/".$guild."?fields=members&locale=en_US&access_token=".$key;
 $ch = curl_init($url);
 print_r($ch);
@@ -15,10 +15,11 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $members = json_decode(curl_exec($ch));
 $members = $members->members;
 print_r($members);
+exit;
 $json = file_get_contents($url);
 $members = json_decode($json, true);
 print_r($members);
-//exit;
+exit;
 //GetAchievements
 function getAchiev($charName) {
     global $region;
