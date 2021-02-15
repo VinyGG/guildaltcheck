@@ -14,7 +14,6 @@ $urlName = "https://".$region.".api.blizzard.com/data/wow/guild/".$realm."/".$gu
 $urlAchiev;
 $members = json_decode(file_get_contents($urlName), true);
 $names = $members['members'];
-exit;
 foreach ( $names as $name ) {
     echo $name['character']['name']."<br>" ;
 }
